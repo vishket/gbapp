@@ -51,9 +51,9 @@ To view the app go to http://localhost:5000/
 
 This application provides two endpoints
 
-- Create a Database table: http://localhost:5000/create_table
+- Create a Database table: http://localhost:5000/create-table
 
-The *create_table* endpoint creates a new table based on the schema 
+The *create-table* endpoint creates a new table based on the schema 
 defined in the 'schema.csv' file. You can also navigate to the same 
 endpoint from the hyperlink on the home page.
 
@@ -61,9 +61,9 @@ WARNING: Creating a table with the same name as an existing one would
 result in an error. You will either have to DROP the existing table OR 
 rename the new table in the .env file
  
-- Load data into table: http://localhost:5000/load_data
+- Load data into table: http://localhost:5000/load-data
  
-The *load_data* endpoint loads data from 'data.csv' into an existing 
+The *load-data* endpoint loads data from 'data.csv' into an existing 
 database table.
 
 ## Examples
