@@ -66,7 +66,7 @@ def parse_schema(filename):
         return None, e
 
 
-@app.route('/create_table')
+@app.route('/create-table')
 def create_table():
     """
     Function to create a database table.  Parses data from the schema file and builds a SQL query
@@ -86,7 +86,7 @@ def create_table():
             cur.close()
             conn.commit()
             print "[INFO] Successfully created new table: {}".format(TABLE_NAME)
-            return "<h>{} successfully created</h> <br /><br /> <a href='http://localhost:5000/load_data'>Load Data" \
+            return "<h>{} successfully created</h> <br /><br /> <a href='http://localhost:5000/load-data'>Load Data" \
                    "</a><br /><br /> <a href='http://localhost:5000'>Home Page </a>".format(TABLE_NAME)
 
         except psycopg2.DatabaseError as e:
@@ -99,7 +99,7 @@ def create_table():
             format(TABLE_NAME, err)
 
 
-@app.route('/load_data')
+@app.route('/load-data')
 def load_data():
     """
     Loads data from CSV file into database table
@@ -126,8 +126,8 @@ def load_data():
 # Application home page with links to create a new table or load data to an existing table
 @app.route('/')
 def run():
-    return "<h><b>Guidebook sample APP!</b></h> <br /><br /><a href='http://localhost:5000/create_table'>Create Table" \
-           "</a><br /> <a href='http://localhost:5000/load_data'>Load Data</a>"
+    return "<h><b>Guidebook sample APP!</b></h> <br /><br /><a href='http://localhost:5000/create-table'>Create Table" \
+           "</a><br /> <a href='http://localhost:5000/load-data'>Load Data</a>"
 
 
 if __name__ == '__main__':
