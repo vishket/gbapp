@@ -31,6 +31,8 @@ These dependencies can be easily installed by running the requirement.txt
 Enter your database connection values in the .env file which resides at
 the root of the application folder
 
+## Run
+
 Once you have all the dependencies installed, simply...
 
 ```
@@ -42,6 +44,8 @@ python app.py
 
 This will launch the application and start serving locally on the 
 default port 5000
+
+To view the app go to http://localhost:5000/
 
 ## Features
 
@@ -61,6 +65,14 @@ rename the new table in the .env file
  
 The *load_data* endpoint loads data from 'data.csv' into an existing 
 database table.
+
+## Examples
+
+The drop_data folder consists of a couple of sample schema,data csv 
+pairs. By default, the app will look for files named "schema.csv" and 
+"data.csv". In order to run the second pair of files, you will have
+to swap the filenames
+
 
 ## Tests
 
