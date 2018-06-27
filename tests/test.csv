@@ -1,0 +1,4 @@
+field name,width,datatype
+id,2,INT
+name,255,VARCHAR
+age,2,INT
