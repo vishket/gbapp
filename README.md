@@ -1,4 +1,4 @@
-# guidebook_challange
+# gbapp
 
 A simple application to create a DB table and load data from csv files 
 (Guidebook coding challenge)
@@ -9,7 +9,7 @@ Clone this project locally
 
 ```
 
-git clone git@github.com:vishket/guidebook_challange.git
+git clone git@github.com:vishket/gbapp.git
 
 ```
 
@@ -36,7 +36,7 @@ the root of the application folder
 Once you have all the dependencies installed, simply...
 
 ```
-cd guidebook_challange/gbapp
+cd gbapp/gbapp
 
 python app.py
 
