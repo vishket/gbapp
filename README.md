@@ -1,7 +1,7 @@
 # gbapp
 
 A simple application to create a DB table and load data from csv files 
-(Guidebook coding challenge)
+(GB coding challenge)
 
 ## Getting started
 
