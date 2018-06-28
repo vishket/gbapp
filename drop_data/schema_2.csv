@@ -1,0 +1,5 @@
+field name,width,datatype
+id,5,INTEGER
+product,20,VARCHAR
+cost,2,FLOAT
+in_stock,1,BOOLEAN
